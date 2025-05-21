@@ -1,22 +1,6 @@
-/* charity: water Brand Colors & Fonts
+/* charity: water Brand Colors & Fonts */
 
-Primary Colors:
-- Yellow:     #FFC907
-- Blue:       #2E9DF7
-
-Secondary Colors:
-- Light Blue: #8BD1CB
-- Green:      #4FCB53
-- Orange:     #FF902A
-- Red:        #F5402C
-- Dark Green: #159A48
-- Pink:       #F16061
-
-Fonts:
-- Proxima Nova
-- Avenir
-
-*/body {
+body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
@@ -25,59 +9,61 @@ Fonts:
   background-image: url('hero-image.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   color: white;
   position: relative;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.4); /* This adds transparency */
+  background: rgba(0, 0, 0, 0.4);
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertically center */
-  align-items: flex-start; /* left-align */
-  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem;
+  box-sizing: border-box;
 }
+
 .logo-bar {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 0.5rem 1rem;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.9rem;
-  color: white;
-  border-radius: 4px;
-  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
 }
 
-.logo-text::before {
-  content: '';
-  display: inline-block;
-  background-color: #f3c743;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+.logo-icon {
+  height: 16px;
   margin-right: 6px;
-  vertical-align: middle;
+}
+
+.logo-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   max-width: 700px;
   margin-bottom: 1.5rem;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .emph {
   font-style: italic;
-  color: #f3c743;
+  color: #FFC907;
 }
 
 .cta {
-  background-color: #f3c743;
+  background-color: #FFC907;
   color: black;
   border: none;
   padding: 1rem 2rem;
@@ -95,4 +81,5 @@ h1 {
 .subtext {
   font-size: 1rem;
   max-width: 500px;
+  line-height: 1.6;
 }
