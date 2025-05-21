@@ -48,8 +48,8 @@ body {
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 4rem;
-  max-width: 700px;
+  font-size: 5rem;
+  max-width: 850px;
   margin-bottom: 1.5rem;
   line-height: 1.3;
 }
@@ -78,7 +78,7 @@ h1 {
 .subtext {
   font-size: 1.5rem;        /* Larger font size */
   line-height: 1.8;         /* More breathing room */
-  max-width: 900px;         /* Slightly wider so it fits in one line */
+  max-width: 700px;         /* Slightly wider so it fits in one line */
   margin-top: 1.5rem;
   white-space: normal;      /* Allow text to wrap naturally */
 }
