@@ -4,7 +4,7 @@ body {
 }
 
 .hero {
-  background-image: url(/img/hero-image.jpg);
+  background-image: url('img/\ hero-image.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -76,9 +76,17 @@ h1 {
 }
 
 .subtext {
-  font-size: 1.5rem;        /* Larger font size */
-  line-height: 1.2;
-  max-width: 700px;         /* Slightly wider so it fits in one line */
-  margin-top: 1.5rem;
-  white-space: normal;      /* Allow text to wrap naturally */
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin-top: 1rem;
+  white-space: normal;
+}@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtext {
+    font-size: 1.1rem;
+  }
 }
