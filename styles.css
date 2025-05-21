@@ -68,11 +68,20 @@ h1 {
   font-size: 1rem;
   margin-bottom: 1.5rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .cta:hover {
   background-color: #e5b625;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.logo-bar {
+  transition: transform 0.3s ease;
+}
+
+.logo-bar:hover {
+  transform: scale(1.05); /* Slight bounce effect */
 }
 
 .subtext {
@@ -82,11 +91,42 @@ h1 {
   margin-top: 1rem;
   white-space: nowrap;    /* Keep all text on one line */
 }@media (max-width: 768px) {
+  .overlay {
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
   h1 {
     font-size: 2.5rem;
+    max-width: 100%;
+  }
+
+  .cta {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
   }
 
   .subtext {
     font-size: 1.1rem;
-    white-space: normal;     /* Let it wrap on small screens */
-  }}
+    white-space: normal;
+    max-width: 90%;
+  }
+
+  .logo-bar {
+    right: 1rem;
+    top: 1rem;
+    transform: scale(0.9);
+  }
+}.overlay {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
