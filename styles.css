@@ -1,15 +1,12 @@
-/* charity: water Brand Colors & Fonts */
-
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
 .hero {
-  background-image: url('hero-image.jpg');
+  background-image: url('img/hero-image.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   color: white;
   position: relative;
