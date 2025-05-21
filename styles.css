@@ -88,5 +88,5 @@ h1 {
 
   .subtext {
     font-size: 1.1rem;
-  }
-}
+    white-space: normal;     /* Let it wrap on small screens */
+  }}
