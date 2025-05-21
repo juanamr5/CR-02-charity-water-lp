@@ -78,9 +78,9 @@ h1 {
 .subtext {
   font-size: 1.5rem;
   line-height: 1.5;
-  max-width: 1000px;
+  max-width: none;        /* Remove width limit */
   margin-top: 1rem;
-  white-space: normal;
+  white-space: nowrap;    /* Keep all text on one line */
 }@media (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
