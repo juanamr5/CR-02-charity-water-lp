@@ -76,8 +76,9 @@ h1 {
 }
 
 .subtext {
-  font-size: 1.2rem;         /* Slightly larger text */
-  line-height: 1.8;          /* More vertical spacing */
-  max-width: 500px;
-  margin-top: 1rem;          /* Optional: adds space above */
+  font-size: 1.5rem;        /* Larger font size */
+  line-height: 1.8;         /* More breathing room */
+  max-width: 900px;         /* Slightly wider so it fits in one line */
+  margin-top: 1.5rem;
+  white-space: normal;      /* Allow text to wrap naturally */
 }
