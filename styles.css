@@ -22,12 +22,12 @@ Fonts:
 }
 
 .hero {
-  background-image: url('img/hero-image.jpg');
+  background-image: url('hero-image.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
-  position: relative;
   color: white;
+  position: relative;
 }
 
 .overlay {
